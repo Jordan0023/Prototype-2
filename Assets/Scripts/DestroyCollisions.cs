@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEngine.UI.Image;
 
 public class DestroyCollisions : MonoBehaviour
@@ -9,6 +10,8 @@ public class DestroyCollisions : MonoBehaviour
 
 
     private Main main;
+
+    private Health health;
 
 
     // Start is called before the first frame update
@@ -29,25 +32,22 @@ public class DestroyCollisions : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            
+
                 Destroy(gameObject);
             if(main != null)
                 main.Lives(-1);
-                
-               
-  
-            
-            
-            
-        } else 
+
+
+
+
+
+        }
+        else
         {
-            Destroy(gameObject);
-            if (main != null)
-                Debug.Log("hi");
-               
-               //other.GetComponent<Hunger>().Feed(1);
-           
-            
-           
+
+            other.GetComponent<Hunger>().Feed(1);
+            main.Score(1f);
         }
            
 

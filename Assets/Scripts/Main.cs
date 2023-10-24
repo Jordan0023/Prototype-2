@@ -7,28 +7,29 @@ using UnityEngine.UI;
 public class Main : MonoBehaviour
 {
 
-    private int score = 0;
+    private float score = 0;
     private int lives = 3;
     public GameObject player;
 
     public Text scoreText;
     public Text livesText;
 
+   
+
 
     // Start is called before the first frame update
 
-   
+
     void Start()
     {
-        score = 0;
-        lives = 3;
+        
 }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = score.ToString();
-        livesText.text = lives.ToString();
+        scoreText.text = "Score = " + score.ToString();
+        livesText.text = "Lives = " + lives.ToString();
     }
 
     public void Lives(int n)
@@ -45,7 +46,7 @@ public class Main : MonoBehaviour
 
     }
 
-    public void Score(int n)
+    public void Score(float n)
     {
         score += n;
 
