@@ -35,6 +35,8 @@ public class DestroyCollisions : MonoBehaviour
             
 
                 Destroy(gameObject);
+
+            other.GetComponent<AnimalHunger>().removeHunger();
             if(main != null)
                 main.Lives(-1);
 

@@ -1099,17 +1099,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
---- !u!114 &1873283290 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9056296390524956587, guid: 06b18f944524f7d4e8c57c65eb39b1a8, type: 3}
-  m_PrefabInstance: {fileID: 7972760020538903298}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2032077360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1194,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 622527418603315926, guid: 2004364fbb7b5f546ac7e2e631c4277c, type: 3}
+    - target: {fileID: 4369384547104531535, guid: 2004364fbb7b5f546ac7e2e631c4277c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -1221,10 +1210,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moose
       objectReference: {fileID: 0}
-    - target: {fileID: 7888258518794224093, guid: 2004364fbb7b5f546ac7e2e631c4277c, type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 1873283290}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1255,10 +1240,10 @@ PrefabInstance:
       propertyPath: objects.Array.data[2]
       value: 
       objectReference: {fileID: 7972760020538903299}
-    - target: {fileID: 3287034160832839162, guid: eecc20d9cfffe0040adf4bbc0d02554b, type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 1873283290}
+    - target: {fileID: 3305522093934572862, guid: eecc20d9cfffe0040adf4bbc0d02554b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4328894108572560371, guid: eecc20d9cfffe0040adf4bbc0d02554b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.77
@@ -1297,10 +1282,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328894108572560371, guid: eecc20d9cfffe0040adf4bbc0d02554b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8767219096335000800, guid: eecc20d9cfffe0040adf4bbc0d02554b, type: 3}
-      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1442,7 +1423,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9158505829734796124, guid: 06b18f944524f7d4e8c57c65eb39b1a8, type: 3}
+    - target: {fileID: 6915687809622190757, guid: 06b18f944524f7d4e8c57c65eb39b1a8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
