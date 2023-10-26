@@ -33,23 +33,24 @@ public class DestroyCollisions : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             
-
-                Destroy(gameObject);
-
-            other.GetComponent<AnimalHunger>().removeHunger();
+            
             if(main != null)
                 main.Lives(-1);
 
+                Destroy(gameObject);
+
+          
 
 
 
 
         }
-        else
+        else if(other.CompareTag("Animal")) 
         {
 
             other.GetComponent<Hunger>().Feed(1);
             main.Score(1f);
+            Destroy(gameObject);
         }
            
 

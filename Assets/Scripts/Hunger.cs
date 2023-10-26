@@ -7,19 +7,19 @@ using UnityEngine.UI;
 public class Hunger : MonoBehaviour
 {
 
-    public Slider slider;
-    public int amountFed = 0;
+    public Slider hungerSlider;
+    public int amountToBeFed;
 
-    private int amount;
+    private int currentFedAmount = 0;
 
     private Main main;
 
     // Start is called before the first frame update
     void Start()
     {
-        slider.maxValue = amountFed;
-        slider.value = 0;
-        slider.fillRect.gameObject.SetActive(false);
+        hungerSlider.maxValue = amountToBeFed;
+        hungerSlider.value = 0;
+        hungerSlider.fillRect.gameObject.SetActive(false);
 
         main = GameObject.Find("Main").GetComponent<Main>();
     }
@@ -32,13 +32,13 @@ public class Hunger : MonoBehaviour
 
     public void Feed(int n)
     {
-        amountFed += n;
-        slider.fillRect.gameObject.SetActive(true);
-        slider.value = amount;
+       currentFedAmount += n;
+        hungerSlider.fillRect.gameObject.SetActive(true);
+        hungerSlider.value = currentFedAmount;
 
-        if(amountFed  > amount)
+        if(currentFedAmount > amountToBeFed)
         {
-            main.Score(amountFed);
+            main.Score(amountToBeFed);
             Destroy(gameObject, 0.1f);
         }
 
